@@ -29,12 +29,11 @@ public class Player : MonoBehaviour
     {
         rb = GetComponent<Rigidbody>();
         Cursor.lockState = CursorLockMode.Locked;
-        
         currentStamina = maxStamina;
         regenStamina = false;
         canRun = true;
     }
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -66,19 +65,21 @@ public class Player : MonoBehaviour
         }
         else
         {
-            rb.velocity = transform.TransformDirection(moveVelocity);
+            
             
             if (regenStamina)
                 currentStamina += staminaRegenRate * Time.deltaTime;
 
             if(Input.GetMouseButton(1))
             {
+                rb.velocity = transform.TransformDirection(moveVelocity / 1.5f);
                 if (CameraManager.IsActiveCamera(cam_zoom) != true)
                     CameraManager.SwitchCamera(cam_zoom);
             }
             
             else
             {
+                rb.velocity = transform.TransformDirection(moveVelocity);
                 if (CameraManager.IsActiveCamera(cam) != true)
                     CameraManager.SwitchCamera(cam);
             }
@@ -98,15 +99,15 @@ public class Player : MonoBehaviour
         }
 
         currentStamina = Mathf.Clamp(currentStamina, 0f, maxStamina);
-        float velocity = Mathf.Clamp01(Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.z));
-
+        
         turn.x += Input.GetAxis("Mouse X") * sensitivity;
         turn.y += Input.GetAxis("Mouse Y") * sensitivity;
         turn.y = Mathf.Clamp(turn.y, -90, 90);
         transform.eulerAngles = new Vector3(0, turn.x, 0);
         activeCam.transform.localEulerAngles = new Vector3(-turn.y, 0, 0);
-
-        if(velocity > 0)
+        
+        float velocity = Mathf.Clamp01(Mathf.Abs(rb.velocity.x) + Mathf.Abs(rb.velocity.z));
+        if (velocity > 0)
         {
             noise.m_AmplitudeGain = velocity * headBobAmount * speed;
             noise.m_FrequencyGain = velocity * headBobSpeed * speed;
