@@ -11,6 +11,10 @@ public class PauseManager : MonoBehaviour
         {
             PauseGame();
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            ResumeGame();
+        }
     }
 
     void PauseGame()
