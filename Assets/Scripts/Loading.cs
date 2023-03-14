@@ -17,12 +17,14 @@ public class Loading : MonoBehaviour
     IEnumerator LoadSceneAsync(string levelName)
     {
         loadingPanel.SetActive(true);
+        loadingPanel.active = true;
 
         AsyncOperation op = SceneManager.LoadSceneAsync(levelName);
 
         while (!op.isDone)
         {
-            float progress = Mathf.Clamp01(op.progress / .9f);
+            //float progress = Mathf.Clamp01(op.progress / .9f);
+            float progress = op.progress * 100;
             loadingBar.value = progress;
 
             yield return null;
