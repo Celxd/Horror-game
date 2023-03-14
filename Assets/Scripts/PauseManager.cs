@@ -4,34 +4,15 @@ using UnityEngine.UI;
 public class PauseManager : MonoBehaviour
 {
     public GameObject pauseCanvas;
-
+    
     void Update()
     {
+        //Pause using esc
         if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            PauseGame();
-        }
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            ResumeGame();
-        }
-    }
+            GameManager.Instance.Pause(pauseCanvas);
 
-    void PauseGame()
-    {
-        // Pause the game
-        Time.timeScale = 0f;
-
-        // Show the pause canvas
-        pauseCanvas.SetActive(true);
-    }
-
-    public void ResumeGame()
-    {
-        // Hide the pause canvas
-        pauseCanvas.SetActive(false);
-
-        // Resume the game
-        Time.timeScale = 1f;
+        //Resume using space
+        if (Input.GetKeyDown(KeyCode.Space) && pauseCanvas.activeSelf == true)
+            GameManager.Instance.Resume(pauseCanvas);
     }
 }

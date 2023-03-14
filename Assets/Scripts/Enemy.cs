@@ -1,9 +1,9 @@
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public GameObject OverCanvas;
     public float speed = 5f;
     public float detectionDistance = 10f;
     public float attackDistance = 2f;
@@ -49,12 +49,7 @@ public class Enemy : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            // Do something when enemy collides with the player
-            // Pause the game
-            Time.timeScale = 0f;
-
-            // Show the pause canvas
-            OverCanvas.SetActive(true);
+            GameManager.Instance.GameOver();
         }
     }
 }
