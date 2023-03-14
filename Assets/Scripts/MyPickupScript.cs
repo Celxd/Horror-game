@@ -6,7 +6,7 @@ public class MyPickupScript : MonoBehaviour
     public KeyCode pickupKey = KeyCode.E;
 
     private GameObject heldObject = null;
-
+    
     private void Update()
     {
         if (Input.GetKeyDown(pickupKey))
