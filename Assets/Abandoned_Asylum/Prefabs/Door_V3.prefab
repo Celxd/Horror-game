@@ -11,7 +11,6 @@ GameObject:
   - component: {fileID: 4012057851299598}
   - component: {fileID: 33756214091816632}
   - component: {fileID: 23363119579768288}
-  - component: {fileID: 64942863706999964}
   m_Layer: 0
   m_Name: Door_Frame
   m_TagString: Untagged
@@ -84,20 +83,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &64942863706999964
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1309553788952446}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300000, guid: 30a37ce794ca1c94192e4d8721b12940, type: 3}
 --- !u!1 &1530804578685078
 GameObject:
   m_ObjectHideFlags: 0
@@ -107,6 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4322688172531766}
+  - component: {fileID: 86692769296154336}
   m_Layer: 0
   m_Name: Door_V3
   m_TagString: Untagged
@@ -131,6 +117,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -90, z: 0}
+--- !u!65 &86692769296154336
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1530804578685078}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.3125175, y: 2.3992455, z: 0.14622684}
+  m_Center: {x: -0.009288192, y: 1.0335149, z: -0.012132786}
 --- !u!1 &1725113251181548
 GameObject:
   m_ObjectHideFlags: 0
@@ -142,7 +141,6 @@ GameObject:
   - component: {fileID: 4500330490572770}
   - component: {fileID: 33479379873172772}
   - component: {fileID: 23417493537140828}
-  - component: {fileID: 2616322373313489344}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -215,16 +213,3 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &2616322373313489344
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1725113251181548}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1.0569313, y: 2.098418, z: 0.15871005}
-  m_Center: {x: -0.52694666, y: -0.90949357, z: 0.028385008}
