@@ -12,7 +12,7 @@ public class PauseManager : MonoBehaviour
             GameManager.Instance.Pause(pauseCanvas);
 
         //Resume using space
-        if (Input.GetKeyDown(KeyCode.Space) && pauseCanvas.activeSelf == true)
+        if (Input.GetKeyDown(KeyCode.Escape) && pauseCanvas.activeSelf == true)
             GameManager.Instance.Resume(pauseCanvas);
     }
 }
