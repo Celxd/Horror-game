@@ -2,41 +2,30 @@ using UnityEngine;
 
 public class DoorController : MonoBehaviour
 {
-    // Rotation angle in degrees
-    public float rotationAngle = -45f;
+    // Reference to the animation component
+    public Animation doorAnimation;
 
-    // Speed of rotation in degrees per second
-    public float rotationSpeed = 2f; // Decreased the value to slow down rotation
-
-    // Flag to indicate whether the door is rotating
-    private bool isRotating = false;
-
-    // Update is called once per frame
-    void Update()
-    {
-        // Check if the door is rotating
-        if (isRotating)
-        {
-            // Calculate the rotation amount based on time and speed
-            float rotationAmount = rotationSpeed * Time.deltaTime;
-
-            // Rotate the door around the y-axis
-            transform.Rotate(0f, rotationAmount, 0f, Space.Self);
-
-            // Check if the door has rotated the desired amount
-            if (Mathf.Abs(transform.rotation.eulerAngles.y) >= Mathf.Abs(rotationAngle))
-            {
-                // Stop the rotation and reset the rotation angle
-                isRotating = false;
-                transform.rotation = Quaternion.Euler(0f, rotationAngle, 0f);
-            }
-        }
-    }
+    // Flag to indicate whether the door is currently opening
+    private bool isOpening = false;
 
     // Called when the player clicks on the door object
     void OnMouseDown()
     {
-        // Start the rotation
-        isRotating = true;
+        // Check if the door is already opening
+        if (!isOpening && doorAnimation != null)
+        {
+            // Set the flag to indicate that the door is opening
+            isOpening = true;
+
+            // Play the door opening animation
+            doorAnimation.Play("Door");
+        }
+    }
+
+    // Called when the door opening animation finishes playing
+    void DoorOpenAnimationFinished()
+    {
+        // Set the flag to indicate that the door is no longer opening
+        isOpening = false;
     }
 }

@@ -14,6 +14,8 @@ public class Enemy : MonoBehaviour
     private Rigidbody rb;
     private CapsuleCollider coll;
 
+    private float timeElapsed = 0f; // Add this line to keep track of time elapsed
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -28,18 +30,23 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        timeElapsed += Time.deltaTime; // Add this line to increment the elapsed time
 
-        if (distanceToPlayer <= detectionDistance)
+        if (timeElapsed >= 10f) // Add this condition to start chasing the player after 10 seconds
         {
-            // Chase the player
-            transform.LookAt(player);
-            transform.Translate(Vector3.forward * speed * Time.deltaTime);
+            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
-            if (distanceToPlayer <= attackDistance)
+            if (distanceToPlayer <= detectionDistance)
             {
-                // Attack the player
-                Debug.Log("Enemy attacked player!");
+                // Chase the player
+                transform.LookAt(player);
+                transform.Translate(Vector3.forward * speed * Time.deltaTime);
+
+                if (distanceToPlayer <= attackDistance)
+                {
+                    // Attack the player
+                    Debug.Log("Enemy attacked player!");
+                }
             }
         }
     }
