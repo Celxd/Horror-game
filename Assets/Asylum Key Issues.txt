@@ -2,18 +2,18 @@ Asylum Key
 ==============
 Bugs & Error | Issues
 
-1.  Performance Too High (Give It Some Option)
-2.  Pickup & Inventory Function Not Working
-3.  Animation(Door & Monster) Not Working
-4.  Game Manager Causing Bug & Error
-5.  Croshair & Inventory UI Gone
-6.  Loading Slider
-7.  Volume Slider Not Working(No Code)
-8.  Full Screen Option Not Working
-9.  Monster's Collider
-10. Flashlight Collider
-11. Operate Room Door Collider
-12. Opening Door Function Error
-13. Play Again Stuck Bug
-14. Play Again Fell Of Map After 2nd Try
-15. Pause Canvas Gone Doesn't Read
+
+1.  Pickup & Inventory Function Not Working
+2.  Animation(Door & Monster) Not Working
+
+3.  Croshair & Inventory UI Gone
+
+4.  Volume Slider Not Working(No Code)
+5.  Full Screen Option Not Working
+
+6. Flashlight Collider
+7. Operate Room Door Collider
+8. Opening Door Function Error
+9. Play Again Stuck Bug
+
+10. Pause Canvas Gone Doesn't Read
