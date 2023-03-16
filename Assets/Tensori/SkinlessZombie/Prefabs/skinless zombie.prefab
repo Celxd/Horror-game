@@ -612,7 +612,7 @@ GameObject:
   - component: {fileID: 4850532169630706798}
   - component: {fileID: 1919236494848246405}
   - component: {fileID: 7058009740786253445}
-  - component: {fileID: 6251316650523132218}
+  - component: {fileID: 8856501305920164243}
   m_Layer: 0
   m_Name: skinless zombie
   m_TagString: Untagged
@@ -712,8 +712,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20a60ce0c9935094187bedca88b17715, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  OverCanvas: {fileID: 0}
-  speed: 5
   detectionDistance: 10
   attackDistance: 2
 --- !u!54 &7058009740786253445
@@ -732,20 +730,28 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &6251316650523132218
-CapsuleCollider:
+--- !u!195 &8856501305920164243
+NavMeshAgent:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1027175079354532261}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.3197124
-  m_Height: 2.3218825
-  m_Direction: 1
-  m_Center: {x: 0.03008008, y: 0.66094124, z: 0}
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 5.2
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1.7
+  m_BaseOffset: 0
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1 &1162833647545388874
 GameObject:
   m_ObjectHideFlags: 0

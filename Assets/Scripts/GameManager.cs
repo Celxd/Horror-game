@@ -63,11 +63,13 @@ public class GameManager : MonoBehaviour
 
     public void Restart()
     {
+        isOver = false;
         SceneManager.LoadScene("Sxe");
     }
 
     public void MainMenu()
     {
+        isOver = false;
         SceneManager.LoadScene("Menu");
     }
 }
