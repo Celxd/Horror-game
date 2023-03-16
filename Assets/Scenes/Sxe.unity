@@ -3249,6 +3249,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2334842487940323058, guid: b8e853c63fdd1d2428a79f871ab081e0,
+        type: 3}
+      propertyPath: m_Interpolate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2334842487940323058, guid: b8e853c63fdd1d2428a79f871ab081e0,
+        type: 3}
+      propertyPath: m_CollisionDetection
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2334842487940323059, guid: b8e853c63fdd1d2428a79f871ab081e0,
         type: 3}
       propertyPath: m_Radius
@@ -3337,17 +3347,17 @@ PrefabInstance:
     - target: {fileID: 2334842488239586307, guid: b8e853c63fdd1d2428a79f871ab081e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.74999994
       objectReference: {fileID: 0}
     - target: {fileID: 5832286078041417620, guid: b8e853c63fdd1d2428a79f871ab081e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.74999994
       objectReference: {fileID: 0}
     - target: {fileID: 5933112093082045667, guid: b8e853c63fdd1d2428a79f871ab081e0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.75
+      value: 0.74999994
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e853c63fdd1d2428a79f871ab081e0, type: 3}

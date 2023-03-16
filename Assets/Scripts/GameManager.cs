@@ -29,7 +29,7 @@ public class GameManager : MonoBehaviour
     {
         _instance = this;
     }
-
+    
     public void Pause(GameObject pauseCanvas)
     {
         if(isOver == false)
@@ -68,6 +68,7 @@ public class GameManager : MonoBehaviour
 
     public void MainMenu()
     {
+        isOver = false;
         SceneManager.LoadScene("Menu");
     }
 }
