@@ -6049,6 +6049,63 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 86
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
+--- !u!1001 &1280895296
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1548659896368684, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_Name
+      value: CanOld_Damaged (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_RootOrder
+      value: 97
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.01742487
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -7.6273274
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.5348138
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.00000002018866
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0.8449699
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.00000003189673
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -115.337
+      objectReference: {fileID: 0}
+    - target: {fileID: 4037751736507588, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17a1d492e24af1c45b4bff786edafebc, type: 3}
 --- !u!1001 &1332301849
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -24135,7 +24192,7 @@ GameObject:
   - component: {fileID: 8602082570280733089}
   - component: {fileID: 8581774692155866283}
   - component: {fileID: 8592123934161064137}
-  - component: {fileID: 8614013444641658177}
+  - component: {fileID: 8604354323383654496}
   m_Layer: 0
   m_Name: Stair_Square
   m_TagString: Untagged
@@ -24143,6 +24200,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 4294967295
   m_IsActive: 1
+--- !u!65 &8604354323383654496
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8604354323383654495}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.278675, y: 1.6284819, z: 12.44025}
+  m_Center: {x: 0.19433546, y: 4.262394, z: 2.6129453}
 --- !u!1 &8604361375704104601
 GameObject:
   m_ObjectHideFlags: 0
@@ -29893,20 +29963,6 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300016, guid: 525e42c8aa5e52e4ea137bc78720fcfc, type: 3}
---- !u!64 &8614013444641658177
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8604354323383654495}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300204, guid: 19cfcdce0b9453b45af782ede3ff985f, type: 3}
 --- !u!64 &8614029236238342767
 MeshCollider:
   m_ObjectHideFlags: 0
