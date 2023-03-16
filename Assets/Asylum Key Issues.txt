@@ -14,4 +14,6 @@ Bugs & Error | Issues
 10. Flashlight Collider
 11. Operate Room Door Collider
 12. Opening Door Function Error
-13. 
+13. Play Again Stuck Bug
+14. Play Again Fell Of Map After 2nd Try
+15. Pause Canvas Gone Doesn't Read

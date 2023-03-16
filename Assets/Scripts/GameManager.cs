@@ -1,4 +1,4 @@
-using System.Collections;
+ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -59,6 +59,11 @@ public class GameManager : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         isOver = true;
         gameOverCanvas.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene("Sxe");
     }
 
     public void MainMenu()
