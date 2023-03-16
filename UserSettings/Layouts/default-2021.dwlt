@@ -470,22 +470,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Animation
+    - Assets/UI
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Animation
+  - Assets/UI
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\1_Game Projects\1_Data - Fork\Induksi 1\Horror-game
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 69}
-    m_SelectedIDs: b4830000
-    m_LastClickedID: 33716
-    m_ExpandedIDs: 00000000ac830000c483000000ca9a3b
+    scrollPos: {x: 0, y: 80.600006}
+    m_SelectedIDs: 487a0000
+    m_LastClickedID: 31304
+    m_ExpandedIDs: 00000000287a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -513,7 +513,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000ac830000
+    m_ExpandedIDs: 00000000287a0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 636.0001
+  m_LastVerticalScrollValue: 0
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:
@@ -644,10 +644,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 2479.6}
+      scrollPos: {x: 0, y: 32}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: aef7ffffe2f9ffff16fbfffff47600004e770000667700009a7b0000a67b0000b27b0000e47b0000ee7b00000e7c00001e7c0000427c0000467c0000667c0000687c00006e7c0000707c0000787c0000a07c0000a27c0000ac7c0000ae7c0000b27c0000c67c0000e27c0000fe7c0000
+      m_ExpandedIDs: ccc4fffffcc5ffff14c9ffffa4ceffffa8ceffffbcceffffacdeffff16fbffff88c500004ace00000acf00002ecf00004ccf0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -964,9 +964,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -15.771291, y: 13.911226, z: -6.432725}
+    m_Target: {x: -5.30153, y: 5.400746, z: -11.105355}
     speed: 2
-    m_Value: {x: -15.771291, y: 13.911226, z: -6.432725}
+    m_Value: {x: -5.30153, y: 5.400746, z: -11.105355}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1013,13 +1013,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.06261749, y: 0.8981403, z: -0.13571247, w: 0.4137531}
+    m_Target: {x: -0.05203383, y: 0.61302906, z: -0.040549614, w: -0.7874244}
     speed: 2
-    m_Value: {x: 0.06301847, y: 0.89681137, z: -0.13551137, w: 0.4164068}
+    m_Value: {x: -0.053209584, y: 0.61290824, z: -0.04146532, w: -0.78726923}
   m_Size:
-    m_Target: 0.28169805
+    m_Target: 0.46345243
     speed: 2
-    m_Value: 0.28169805
+    m_Value: 0.44349515
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1037,7 +1037,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: -0.24762306, y: 0.5368443, z: -0.16856928, w: -0.78877634}
+  m_LastSceneViewRotation: {x: 0.06261749, y: 0.8981403, z: -0.13571247, w: 0.4137531}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
