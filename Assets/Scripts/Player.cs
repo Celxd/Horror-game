@@ -2,6 +2,7 @@ using Cinemachine;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class Player : MonoBehaviour
 {
     [SerializeField] float gravityMultiplier = 2f;
@@ -15,6 +16,8 @@ public class Player : MonoBehaviour
     [SerializeField] float maxStamina = 100f;
     [SerializeField] float staminaRegenRate = 10f;
     [SerializeField] float staminaDepletionRate = 20f;
+    [SerializeField] AudioClip footstepSound;
+    [SerializeField] float footstepInterval = 0.5f;
 
     public Vector2 turn;
     private Rigidbody rb;
@@ -24,6 +27,9 @@ public class Player : MonoBehaviour
     private bool regenStamina;
     private bool canRun;
     private CinemachineVirtualCamera activeCam;
+    private AudioSource audioSource;
+    private float lastFootstepTime = 0f;
+
 
     private void Awake()
     {
@@ -32,8 +38,9 @@ public class Player : MonoBehaviour
         currentStamina = maxStamina;
         regenStamina = false;
         canRun = true;
+        audioSource = GetComponent<AudioSource>();
     }
-    
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +50,7 @@ public class Player : MonoBehaviour
 
         CameraManager.SwitchCamera(cam);
     }
+
 
     // Update is called once per frame
     void Update()
