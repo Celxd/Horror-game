@@ -11380,6 +11380,30 @@ CapsuleCollider:
   m_Height: 2.0123625
   m_Direction: 1
   m_Center: {x: 0, y: -0.047864437, z: 0}
+--- !u!114 &2147094044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147094027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af132675c046d7f43b4a5a591c86d582, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  soundDetected: 1
+  perimeterAlert: 0
+  TagFilter: 
+  soundDetectAroundCorner: 1
+  distanceHearingAroundCorner: 10
+  distanceToObj: 0
+  emitterLevelLive: 0
+  highSoundLevel: 30
+  timeAlert: 5
+  alertTime: 0
+  targetObj: {fileID: 0}
+  zoneActivator: 0
 --- !u!1 &1259366417948514
 GameObject:
   m_ObjectHideFlags: 0
