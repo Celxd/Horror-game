@@ -64,7 +64,7 @@ public class Player : MonoBehaviour
 
             rb.AddForce(Physics.gravity * gravityMultiplier, ForceMode.Acceleration);
 
-            if (Input.GetKey(KeyCode.LeftShift) && canRun == true)
+            if (Input.GetButton("Run") && canRun == true)
             {
                 rb.velocity = transform.TransformDirection(moveVelocity * 1.5f);
                 currentStamina -= staminaDepletionRate * Time.deltaTime;
@@ -73,6 +73,7 @@ public class Player : MonoBehaviour
                 if (CameraManager.IsActiveCamera(cam_sprint) != true)
                     CameraManager.SwitchCamera(cam_sprint);
             }
+
             else
             {
 
