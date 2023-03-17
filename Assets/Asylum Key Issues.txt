@@ -4,7 +4,7 @@ Bugs & Error | Issues
 
 
 1.  Pickup & Inventory Function Not Working
-2.  Animation(Door & Monster) Not Working
+2.  Animation(Monster) Not Working
 
 
 
@@ -13,5 +13,5 @@ Bugs & Error | Issues
 
 
 
-5. Opening Door Function Error
-6. Play Again Stuck Bug
+
+5. Play Again Stuck Bug
