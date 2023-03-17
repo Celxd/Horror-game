@@ -6,12 +6,12 @@ Bugs & Error | Issues
 1.  Pickup & Inventory Function Not Working
 2.  Animation(Door & Monster) Not Working
 
-3.  Fix Inventory UI Size
 
-4.  Volume Slider Not Working(No Code)
-5.  Full Screen Option Not Working
 
-6. Flashlight Collider
+3.  Volume Slider Not Working(No Code)
+4.  Full Screen Option Not Working
 
-7. Opening Door Function Error
-8. Play Again Stuck Bug
+
+
+5. Opening Door Function Error
+6. Play Again Stuck Bug
