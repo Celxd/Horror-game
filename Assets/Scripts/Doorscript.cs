@@ -28,7 +28,13 @@ public class Doorscript : MonoBehaviour
         RaycastHit hit;
 
         // This will get the Camera component from the CinemachineVirtualCamera component.
-        Camera camera = playerCamera.GetComponentInChildren<Camera>();
+        Camera camera = playerCamera?.GetComponentInChildren<Camera>();
+
+        if (camera == null)
+        {
+            Debug.LogError("Could not find camera on playerCamera");
+            return;
+        }
 
         // This will create a ray that starts at the camera and points forward.
         Ray ray = camera.ScreenPointToRay(new Vector3(Screen.width / 2, Screen.height / 2, 0));
@@ -41,6 +47,12 @@ public class Doorscript : MonoBehaviour
             {
                 // This line will get the Animator from the parent of the door that was hit by the raycast.
                 anim = hit.transform.GetComponentInParent<Animator>();
+
+                if (anim == null)
+                {
+                    Debug.LogError("Could not find animator on door");
+                    return;
+                }
 
                 // This will set the bool the opposite of what it is.
                 isOpen = !isOpen;
