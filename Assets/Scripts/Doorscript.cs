@@ -59,6 +59,9 @@ public class Doorscript : MonoBehaviour
 
                 // This line will set the bool true so it will play the animation.
                 anim.SetBool("Open", isOpen);
+
+                // This will unhide the Animator component on the door.
+                anim.enabled = true;
             }
         }
     }

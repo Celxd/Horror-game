@@ -3536,7 +3536,7 @@ PrefabInstance:
     - target: {fileID: 2334842487940323069, guid: b8e853c63fdd1d2428a79f871ab081e0,
         type: 3}
       propertyPath: headBobAmount
-      value: 0.7
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2334842487940323069, guid: b8e853c63fdd1d2428a79f871ab081e0,
         type: 3}
@@ -25223,7 +25223,7 @@ Animator:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8604587867775717587}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 8f8ee292d78b28a44bc9d543fc7e891f, type: 2}
   m_CullingMode: 0
