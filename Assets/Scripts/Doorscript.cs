@@ -8,8 +8,8 @@ public class Doorscript : MonoBehaviour
     public CinemachineVirtualCamera playerCamera;
     [Header("MaxDistance you can open the door.")]
     public float maxDistance = 5;
-
-    private bool isOpen = false;
+    public AudioSource doorsound;
+    public bool isOpen = false;
     private Animator anim;
 
     void Update()
@@ -62,6 +62,7 @@ public class Doorscript : MonoBehaviour
 
                 // This will unhide the Animator component on the door.
                 anim.enabled = true;
+                doorsound.Play();
             }
         }
     }
