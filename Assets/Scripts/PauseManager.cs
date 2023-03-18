@@ -7,16 +7,29 @@ public class PauseManager : MonoBehaviour
 
     void Update()
     {
-        //Pause using esc
+        // Pause using ESC
         if (Input.GetKeyDown(KeyCode.Escape) && !pauseCanvas.activeSelf)
         {
             GameManager.Instance.Pause(pauseCanvas);
+            UnlockCursor();
         }
-        //Resume using space
+        // Resume using ESC
         else if (Input.GetKeyDown(KeyCode.Escape) && pauseCanvas.activeSelf)
         {
             GameManager.Instance.Resume(pauseCanvas);
+            LockCursor();
         }
+    }
 
+    void UnlockCursor()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+    void LockCursor()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 }

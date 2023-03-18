@@ -264,7 +264,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 52677942}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 317684155}
+        m_TargetAssemblyTypeName: Pause, Assembly-CSharp
+        m_MethodName: resume
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &52677942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9278,7 +9290,12 @@ PrefabInstance:
     - target: {fileID: 1919236494848246405, guid: 6a57508ea9f1a2e4ba69675cdd7361e3,
         type: 3}
       propertyPath: detectionDistance
-      value: 7
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7058009740786253445, guid: 6a57508ea9f1a2e4ba69675cdd7361e3,
+        type: 3}
+      propertyPath: m_Constraints
+      value: 32
       objectReference: {fileID: 0}
     - target: {fileID: 7058009740786253445, guid: 6a57508ea9f1a2e4ba69675cdd7361e3,
         type: 3}
@@ -9303,7 +9320,7 @@ PrefabInstance:
     - target: {fileID: 8856501305920164243, guid: 6a57508ea9f1a2e4ba69675cdd7361e3,
         type: 3}
       propertyPath: m_Acceleration
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6a57508ea9f1a2e4ba69675cdd7361e3, type: 3}
@@ -11380,30 +11397,6 @@ CapsuleCollider:
   m_Height: 2.0123625
   m_Direction: 1
   m_Center: {x: 0, y: -0.047864437, z: 0}
---- !u!114 &2147094044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2147094027}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af132675c046d7f43b4a5a591c86d582, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundDetected: 1
-  perimeterAlert: 0
-  TagFilter: 
-  soundDetectAroundCorner: 1
-  distanceHearingAroundCorner: 10
-  distanceToObj: 0
-  emitterLevelLive: 0
-  highSoundLevel: 30
-  timeAlert: 5
-  alertTime: 0
-  targetObj: {fileID: 0}
-  zoneActivator: 0
 --- !u!1 &1259366417948514
 GameObject:
   m_ObjectHideFlags: 0
