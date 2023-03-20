@@ -1,15 +1,12 @@
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    public float detectionDistance = 10f;
-    public float attackDistance = 2f;
-
     private Transform player;
     private NavMeshAgent navMeshAgent;
 
+    private float attackDistance = 2f;
     private float timeElapsed = 0f;
 
     void Start()
@@ -25,18 +22,15 @@ public class Enemy : MonoBehaviour
     {
         timeElapsed += Time.deltaTime;
 
-        if (timeElapsed >= 10f)
+        // Create a raycast from the enemy to the player to check if there are any obstacles in the way
+        RaycastHit hit;
+        if (Physics.Raycast(transform.position, (player.position - transform.position).normalized, out hit))
         {
-            float distanceToPlayer = Vector3.Distance(transform.position, player.position);
-
-            if (distanceToPlayer <= detectionDistance)
+            // If the obstacle is the player, enable the NavMeshAgent and disable the obstacle
+            if (hit.collider.CompareTag("Player"))
             {
-                navMeshAgent.SetDestination(player.position); // Set the NavMeshAgent's destination to the player's position
-
-                if (distanceToPlayer <= attackDistance)
-                {
-                    Debug.Log("Enemy attacked player!");
-                }
+                navMeshAgent.isStopped = false;
+                navMeshAgent.SetDestination(player.position);
             }
         }
     }
